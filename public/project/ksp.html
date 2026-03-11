@@ -112,7 +112,8 @@ body {
 		<script src="ksp.js"></script>
 		<script>
 const GODOT_CONFIG = {
-  "args": ["--main-pack", "./ksp.pck"],
+  "args": [],
+  "mainPack": "ksp.pck",
   "canvasResizePolicy": 2,
   "emscriptenPoolSize": 8,
   "ensureCrossOriginIsolationHeaders": false,
@@ -126,7 +127,7 @@ const GODOT_CONFIG = {
   "gdextensionLibs": [],
   "godotPoolSize": 4
 };
-
+			
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
