@@ -113,13 +113,10 @@ body {
 		<script src="ksp.js"></script>
 		<script>
 const GODOT_CONFIG = {
-    "args": [
-        "--main-pack", 
-        "https://raw.githubusercontent.com/AleHdzB/International-Space-Station-25th-Anniversary-Apps/gh-pages/project/ksp.pck"
-    ],
+    "args": ["--main-pack", "ksp.pck"], // Cambia la URL larga por solo el nombre
     "canvasResizePolicy": 2,
-    "executable": "ksp",
-    "ensureCrossOriginIsolationHeaders": true, // CAMBIAR A TRUE
+    "executable": "ksp", 
+    "ensureCrossOriginIsolationHeaders": true, // Mantén esto en true
     "fileSizes": {
         "ksp.pck": 105094248,
         "ksp.wasm": 36160334
