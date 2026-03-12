@@ -11,6 +11,10 @@ import Star5Content from './components/Star5Content.jsx'
 import Star6Content from './components/Star6Content.jsx'
 import popup2 from './assets/PopUps/2.jpg'
 
+// Build immersive experience URL from Vite base (configurable via vite.config.js or env)
+// import.meta.env.BASE_URL will be '/' in dev and '/International-Space-Station-25th-Anniversary-Apps/' on GH Pages
+const KSP_URL = `${import.meta.env.BASE_URL}ksp.html`;
+
 // Párrafos hardcodeados (en inglés) y en orden
 const TEXTS = [
   'Hello, I am Julieta Fierro',
@@ -181,7 +185,7 @@ function App() {
       `}</style>
       <button
         type="button"
-        onClick={() => window.open('ksp.html', '_blank', 'noopener,noreferrer')}
+        onClick={() => window.open(KSP_URL, '_blank', 'noopener,noreferrer')}
         aria-label="Open immersive experience"
         style={{
           position: 'fixed',
