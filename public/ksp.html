@@ -90,8 +90,8 @@ body {
 	z-index: 1;
 }
 		</style>
-		<link id="-gd-engine-icon" rel="icon" type="image/png" href="ksp.icon.png" />
-<link rel="apple-touch-icon" href="ksp.apple-touch-icon.png"/>
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="./ksp.icon.png" />
+<link rel="apple-touch-icon" href="./ksp.apple-touch-icon.png"/>
 
 	</head>
 	<body>
@@ -104,7 +104,7 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="ksp.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="./ksp.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
@@ -112,10 +112,7 @@ body {
 		<script src="ksp.js"></script>
 		<script>
 const GODOT_CONFIG = {
-    "args": ["--main-pack", "ksp.pck"],
-    "canvasResizePolicy": 2,
-    "executable": "ksp",
-    "ensureCrossOriginIsolationHeaders": true,
+    "args": ["--main-pack", "./ksp.pck"],
     "fileSizes": {
         "ksp.pck": 105094248,
         "ksp.wasm": 36160334
